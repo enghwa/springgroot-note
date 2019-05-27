@@ -40,7 +40,7 @@ spec:
           - name: "springdatasourceusername"
             value: "dbaadmin"
           - name: "springdatasourceurl"
-            value: "jdbc:mysql57-dev://mysql:3306/notes_app?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true"
+            value: "jdbc:mysql://mysql57-dev:3306/notes_app?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true"
           - name: "mysqlpassword"
             valueFrom:
               secretKeyRef:
