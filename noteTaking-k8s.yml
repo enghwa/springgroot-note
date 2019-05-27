@@ -50,3 +50,11 @@ spec:
             - containerPort: 8080
 
 # kubectl create secret generic mysql57-dev-password --from-literal=dbpassword='XXXX'
+# need external name for RDS
+# kind: Service
+# apiVersion: v1
+# metadata:
+#   name: mysql57-dev
+# spec:
+#   type: ExternalName
+#   externalName: XXXXX.XXX.rds.amazonaws.com
