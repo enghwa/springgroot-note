@@ -1,7 +1,7 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: EKSWSV1
+Description: EKS-Springboot-JPA
 
 
 Parameters:
@@ -18,7 +18,7 @@ Parameters:
   GitSourceRepo:
     Type: String
     Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
-    Default: springgroot
+    Default: springgroot-note
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository name
