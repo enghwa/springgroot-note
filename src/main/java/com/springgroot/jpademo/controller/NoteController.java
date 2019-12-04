@@ -33,6 +33,12 @@ public class NoteController {
         return noteRepository.findById(noteId)
                 .orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
     }
+    @GetMapping("/note/{id}")
+    public Note getNoteById(@PathVariable(value = "id") Long noteId) {
+        return noteRepository.findById(noteId)
+                .orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
+    }
+
 
     @PutMapping("/notes/{id}")
     public Note updateNote(@PathVariable(value = "id") Long noteId,
